@@ -1,0 +1,114 @@
+.reservation{
+    padding: 120px 10%;
+    background: #faf8f5;
+}
+
+.reservation-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.reservation-info h2{
+    font-size: 3rem;
+    margin: 20px 0;
+    color: #2d2a26;
+}
+
+.reservation-info p{
+    color: #666;
+    line-height: 1.8;
+}
+
+.reservation-details{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+}
+
+.reservation-details strong{
+    color: #2d2a26;
+}
+
+.reservation-form{
+    background: white;
+    padding: 45px;
+    border-radius: 22px;
+    box-shadow: 0 20px 45px rgba(0,0,0,.08);
+    display: grid;
+    gap: 20px;
+}
+
+.reservation-form input,
+.reservation-form select{
+    padding: 16px 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    font-size: 1rem;
+    outline: none;
+    transition: .3s;
+}
+
+.reservation-form input:focus,
+.reservation-form select:focus{
+    border-color: #8B5E3C;
+    box-shadow: 0 0 0 4px rgba(139,94,60,.15);
+}
+
+.reservation-form button{
+    margin-top: 10px;
+    width: 100%;
+}
+
+@media (max-width:900px){
+    .reservation-container{
+        grid-template-columns: 1fr;
+    }
+
+    .reservation-details{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.reservation-success {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 10px;
+      background: #e5f4e8;
+      color: #28653a;
+      font-weight: 600;
+      line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+    .reservation {
+        padding: 80px 6%;
+    }
+
+    .reservation-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .reservation-info h2 {
+        font-size: 2.4rem;
+    }
+
+    .reservation-info p {
+        line-height: 1.7;
+    }
+
+    .reservation-form {
+        padding: 25px;
+    }
+
+    .reservation-form input,
+    .reservation-form select,
+    .reservation-form button {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+

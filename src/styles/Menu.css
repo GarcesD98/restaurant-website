@@ -1,0 +1,138 @@
+.menu {
+    padding: 120px 10%;
+    background: #faf8f5;
+}
+
+.menu h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #2d2a26;
+}
+
+.menu-subtitle {
+    text-align: center;
+    color: #666;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 70px;
+    line-height: 1.8;
+}
+
+.menu-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.menu-item {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    transition: .35s;
+}
+
+.menu-item:hover {
+    transform: translateY(-6px);
+}
+
+.menu-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.menu-top h3 {
+    font-size: 1.4rem;
+}
+
+.menu-top span {
+    color: #C89B5E;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.category {
+    color: #8B5E3C;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.menu-categories {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-category {
+    margin-bottom: 80px;
+}
+
+.menu-category:last-child {
+    margin-bottom: 0;
+}
+
+.category-title {
+    font-size: 2rem;
+    color: #2d2a26;
+    margin-bottom: 35px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #C89B5E;
+}
+
+@media (max-width: 700px) {
+    .menu {
+        padding: 80px 6%;
+    }
+
+    .menu h2 {
+        font-size: 2.4rem;
+    }
+
+    .menu-subtitle {
+        margin-bottom: 40px;
+        line-height: 1.6;
+    }
+
+    .menu-categories {
+        width: 100%;
+    }
+
+    .menu-category {
+        margin-bottom: 55px;
+    }
+
+    .category-title {
+        font-size: 1.7rem;
+        margin-bottom: 25px;
+    }
+
+    .menu-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .menu-item {
+        padding: 24px;
+    }
+
+    .menu-top {
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .menu-top h3 {
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+
+    .menu-top span {
+        font-size: 1.1rem;
+        white-space: nowrap;
+    }
+
+    .menu-item p {
+        line-height: 1.6;
+    }
+}
